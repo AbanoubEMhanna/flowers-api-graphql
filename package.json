@@ -1,0 +1,31 @@
+{
+  "name": "flowers-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "cross-env NODE_ENV=development nodemon src/index.js --ext js,graphql --exec babel-node",
+    "start": " cross-env NODE_ENV=production APOLLO_KEY=service:flowers:PgMF6sTeJGachlDUeYsykg APOLLO_GRAPH_VARIANT=current APOLLO_SCHEMA_REPORTING=true  nodemon src/index.js --ext js,graphql --exec babel-node ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AbanoubEssam",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.18.2",
+    "awake-heroku": "^1.0.17",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.23.0",
+    "config": "^3.3.2",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "graphql": "^15.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "make-dir": "^3.1.0",
+    "mongoose": "^5.10.9",
+    "nodemon": "^2.0.6",
+    "shortid": "^2.2.16"
+  }
+}
